@@ -1,7 +1,17 @@
 import React from "react";
+import NewButton from "./components/button/Button";
+import ButtonAppBar from "./components/toolbar/Toolbar";
+import EnhancedTable from "./components/table/table";
 
 const App: React.FC = () => {
-  return <h1>Hello, React with TypeScript!</h1>;
+  
+  return (
+    <div>
+      <ButtonAppBar />
+      <NewButton />
+      <EnhancedTable />
+    </div>
+  );
 };
 
 export default App;
