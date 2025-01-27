@@ -1,14 +1,20 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import { Stack } from '@mui/material';
 
-const NewButton = () => {
+interface NewButtonProps {
+  href: string;
+  variant?: 'text' | 'outlined' | 'contained' | undefined;	 
+
+}
+
+const ScreenButton = ({variant, href}: NewButtonProps) => {
   return (
-    <ButtonGroup variant="contained" aria-label="Basic button group">
-      <Button>One</Button>
-      <Button>Two</Button>
-    </ButtonGroup>
+   
+      <Button variant={variant} href={href}></Button>
+
   );
 }
 
-export default NewButton;
+export default ScreenButton;

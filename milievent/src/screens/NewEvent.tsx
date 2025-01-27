@@ -45,7 +45,7 @@ const NewEvent = () => {
                 <p>X icon</p>
             </div>
             <div>
-                <NewButton />
+                <Button />
             </div>
             
             
